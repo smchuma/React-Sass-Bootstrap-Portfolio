@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Logo from "../../Elements/Logo";
 
 const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
@@ -108,7 +108,7 @@ const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
                 smooth={true}
                 duration={500}
               >
-                <i class="fa-solid fa-diagram-project"></i>Projects
+                <i className="fa-solid fa-diagram-project"></i>Projects
               </Link>
             </li>
             <li>

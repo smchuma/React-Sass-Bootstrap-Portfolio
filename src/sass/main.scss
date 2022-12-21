@@ -60,16 +60,13 @@ section.home {
     flex-direction: column;
 
     .circle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       box-shadow: 0 1px 0px white;
-      border-radius: 50%;
       width: 300px;
       height: 300px;
+      margin-bottom: 30px;
 
       img {
-        width: 95%;
+        width: 97%;
       }
     }
 
@@ -81,7 +78,7 @@ section.home {
     p {
       color: #fff;
       font-size: 25px;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
     }
 
     span {
@@ -98,13 +95,7 @@ section.home {
   }
 
   .social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-
     li {
-      list-style: none;
       a {
         color: #fff;
         font-size: 30px;
@@ -129,6 +120,18 @@ section.home {
     top: -14px;
     position: absolute;
     width: 37px;
+  }
+}
+
+section.about {
+  .container {
+    .coding {
+      i {
+        font-size: 50px;
+        margin-left: 50px;
+        opacity: 0.5;
+      }
+    }
   }
 }
 
