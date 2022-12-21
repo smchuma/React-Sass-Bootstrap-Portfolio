@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
-import { About, Header, HeroSection, Services } from "../../Components";
+import { About, Header, HeroSection, Resume, Services } from "../../Components";
 
 const Home = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -35,6 +35,9 @@ const Home = () => {
         </Element>
         <Element name="section-services">
           <Services />
+        </Element>
+        <Element name="section-experiences">
+          <Resume />
         </Element>
       </main>
     </>
