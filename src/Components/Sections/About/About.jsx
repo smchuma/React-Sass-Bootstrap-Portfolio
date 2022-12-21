@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle } from "../../Components";
+import { PageTitle } from "../../../Components";
 
 const About = () => {
   return (
@@ -45,6 +45,7 @@ const About = () => {
           <i className="fa-brands fa-angular"></i>
         </div>
       </div>
+      <div className="spacer" data-height="70"></div>
       <div className="spacer" data-height="70"></div>
     </section>
   );

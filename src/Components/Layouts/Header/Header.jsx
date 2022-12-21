@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Logo from "../../Elements/Logo";
+import Logo from "../../Elements/Logo/Logo";
 
 const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
   const handleClasses = () => {
