@@ -1,0 +1,182 @@
+export const filters = [
+  {
+    id: 1,
+    text: "Everything",
+  },
+  {
+    id: 2,
+    text: "Posters",
+  },
+  {
+    id: 3,
+    text: "Art",
+  },
+  {
+    id: 4,
+    text: "Banner",
+  },
+  {
+    id: 5,
+    text: "Business Cards",
+  },
+];
+
+export const allData = [
+  {
+    id: 1,
+    title: "Glowing In Desert",
+    category: "art",
+    image: "images/works/art/desert.jpg",
+    popupLink: ["images/works/art/desert.jpg"],
+  },
+  {
+    id: 2,
+    title: "Double Exposure",
+    category: "art",
+    image: "images/works/art/double.jpg",
+    popupLink: ["images/works/art/double2.jpg"],
+  },
+  {
+    id: 3,
+    title: "Fantasy",
+    category: "art",
+    image: "images/works/art/fantasy.jpg",
+  },
+  {
+    id: 4,
+    title: "Glitter on Speakers",
+    category: "art",
+    image: "images/works/art/glitter.jpg",
+    popupLink: ["images/works/art/glitter.jpg"],
+  },
+  {
+    id: 5,
+    title: "Shattered Pixels",
+    category: "art",
+    image: "images/works/art/shattered.jpg",
+    popupLink: [
+      "images/works/art/shattered.jpg",
+      "images/works/art/pixels.jpg",
+    ],
+  },
+  {
+    id: 6,
+    title: "Sparks",
+    category: "art",
+    image: "images/works/art/sparks.jpg",
+    link: "images/works/art/sparks.jpg",
+  },
+  {
+    id: 7,
+    title: "Akuas Studios",
+    category: "banner",
+    image: "images/works/banner/akuas.jpg",
+    link: "images/works/banner/akuas.jpg",
+  },
+  {
+    id: 8,
+    title: "Magma Food",
+    category: "banner",
+    image: "images/works/banner/magma.jpg",
+    popupLink: ["images/works/banner/magma.jpg"],
+  },
+  {
+    id: 9,
+    title: "Pure Genius Photography",
+    category: "banner",
+    image: "images/works/banner/pure.png",
+    popupLink: ["images/works/banner/pure.png"],
+  },
+  {
+    id: 10,
+    title: "Business Card",
+    category: "card",
+    image: "images/works/cards/card1.png",
+    link: ["images/works/cards/card1.png", "images/works/cards/card2.png"],
+  },
+  {
+    id: 11,
+    title: "Brochure",
+    category: "poster",
+    image: "images/works/poster/brochure.jpg",
+    link: "images/works/poster/brochure.jpg",
+  },
+  {
+    id: 12,
+    title: "Lucky",
+    category: "poster",
+    image: "images/works/poster/lucky.jpg",
+    popupLink: ["images/works/poster/lucky.jpg"],
+  },
+  {
+    id: 13,
+    title: "mELinA",
+    category: "poster",
+    image: "images/works/poster/melina.png",
+    popupLink: ["https://www.youtube.com/watch?v=uIS_VmBKTKs"],
+  },
+  {
+    id: 14,
+    title: "Doricas Mitumba Shop",
+    category: "poster",
+    image: "images/works/poster/mitumba.jpg",
+    popupLink: ["images/works/poster/mitumba.jpg"],
+  },
+  {
+    id: 15,
+    title: "Kyeni friday show",
+    category: "poster",
+    image: "images/works/poster/poster1.png",
+    popupLink: ["images/works/poster/poster1.png"],
+  },
+  {
+    id: 16,
+    title: "Kyeni Nutovoa",
+    category: "poster",
+    image: "images/works/poster/poster2.png",
+    popupLink: ["images/works/poster/poster2.png"],
+  },
+  {
+    id: 17,
+    title: "Kyeni Kavithye",
+    category: "poster",
+    image: "images/works/poster/poster3.png",
+    popupLink: ["images/works/poster/poster3.png"],
+  },
+  {
+    id: 18,
+    title: "Gisky Lounge",
+    category: "poster",
+    image: "images/works/poster/poster4.png",
+    popupLink: [
+      "images/works/poster/poster4.png",
+      "images/works/poster/poster6.png",
+    ],
+  },
+  {
+    id: 19,
+    title: "Pure Genius Photography",
+    category: "poster",
+    image: "images/works/poster/poster5.png",
+    popupLink: ["images/works/poster/poster5.png"],
+  },
+
+  {
+    id: 20,
+    title: "The Black Silver",
+    category: "poster",
+    image: "images/works/poster/poster7.jpg",
+    popupLink: ["images/works/poster/poster7.jpg"],
+  },
+  {
+    id: 20,
+    title: "MCA",
+    category: "poster",
+    image: "images/works/poster/sample1.jpg",
+    popupLink: [
+      "images/works/poster/sample1.jpg",
+      "images/works/poster/sample2.jpg",
+      "images/works/poster/sample3.jpg",
+    ],
+  },
+];
