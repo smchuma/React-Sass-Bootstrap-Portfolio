@@ -103,7 +103,7 @@ const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
             <li>
               <Link
                 activeClass="active"
-                to="section-blogs"
+                to="section-projects"
                 spy={true}
                 smooth={true}
                 duration={500}

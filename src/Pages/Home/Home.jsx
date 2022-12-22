@@ -3,8 +3,10 @@ import ReactCursorPosition from "react-cursor-position";
 import { Element } from "react-scroll";
 import {
   About,
+  Contact,
   Header,
   HeroSection,
+  Projects,
   Resume,
   Services,
   Works,
@@ -48,6 +50,12 @@ const Home = () => {
         </Element>
         <Element name="section-works">
           <Works />
+        </Element>
+        <Element name="section-projects">
+          <Projects />
+        </Element>
+        <Element name="section-contact">
+          <Contact />
         </Element>
       </main>
     </>

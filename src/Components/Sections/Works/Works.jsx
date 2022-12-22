@@ -107,6 +107,7 @@ const Works = () => {
           </button>
         </div>
       </div>
+      <div className="spacer" data-height="70"></div>
     </section>
   );
 };

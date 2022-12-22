@@ -8,3 +8,6 @@ export { default as Resume } from "./Sections/Resume/Resume";
 export { default as Timeline } from "./Elements/Timeline/Timeline";
 export { default as Works } from "./Sections/Works/Works";
 export { default as Portfolio } from "./Elements/Portfolio/Portfolio";
+export { default as Projects } from "./Sections/Projects/Projects";
+export { default as Project } from "./Elements/Project/Project";
+export { default as Contact } from "./Sections/Contact/Contact";
