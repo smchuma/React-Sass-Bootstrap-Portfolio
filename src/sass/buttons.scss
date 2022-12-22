@@ -1,5 +1,5 @@
 /*=================================================================*/
-/*                     BUTTONS
+/*                     BUTTON
 /*=================================================================*/
 .btn {
   border-radius: 30px;
@@ -56,6 +56,7 @@
 
   &:hover {
     color: #fff;
+    background: #375bff;
     -webkit-animation-name: button-push;
     animation-name: button-push;
     -webkit-animation-duration: 0.3s;
@@ -65,35 +66,4 @@
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
   }
-}
-
-.btn-full {
-  text-align: center;
-  width: 100%;
-}
-
-.btn-group-lg > .btn,
-.btn-lg {
-  padding: 28px 30px;
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 0;
-}
-
-.btn-sm {
-  padding: 17px 16px;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.btn-xs {
-  padding: 12px 10px;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.btn.disabled,
-.btn:disabled {
-  opacity: 1;
-  cursor: not-allowed;
 }

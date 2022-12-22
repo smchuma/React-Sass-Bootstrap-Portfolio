@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 import { PageTitle } from "../../../Components";
 
 function Contact() {

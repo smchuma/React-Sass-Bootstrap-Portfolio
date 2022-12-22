@@ -292,9 +292,8 @@ section.contact {
 
   li {
     button {
-      color: #5e5c7f;
+      color: #ffffff;
       cursor: pointer;
-      font-family: $fonthead;
       font-size: 16px;
       font-weight: 700;
       position: relative;
@@ -307,7 +306,7 @@ section.contact {
 
       &:hover,
       &.current {
-        color: $colorpink;
+        color: rgb(74, 195, 255);
       }
     }
   }
