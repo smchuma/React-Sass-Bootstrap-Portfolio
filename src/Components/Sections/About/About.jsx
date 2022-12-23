@@ -24,7 +24,11 @@ const About = () => {
                 projects have helped me improve my programming skills immensely.
               </p>
               <div className="mt-3">
-                <a href="!#" className="btn btn-default">
+                <a
+                  href="cv.pdf"
+                  download="Samora Mchuma CV.pdf"
+                  className="btn btn-default"
+                >
                   Download CV
                 </a>
               </div>
