@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle, Timeline } from "../../../Components";
+import { PageTitle, Timeline } from "../../Elements";
 
 const educationData = [
   {

@@ -10,10 +10,10 @@ function Project({ projectData }) {
       animateOut="fadeInOut"
       animateOnce={true}
     >
-      <div className="blog-item rounded ">
+      <div className="projects-item rounded ">
         <div className="thumb">
           <div>
-            <img src={image} alt="blog-title" />
+            <img src={image} alt="projects-title" />
           </div>
         </div>
         <div className="details">

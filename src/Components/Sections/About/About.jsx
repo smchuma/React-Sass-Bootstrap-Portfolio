@@ -1,5 +1,5 @@
 import React from "react";
-import { PageTitle } from "../../../Components";
+import { PageTitle } from "../../Elements";
 
 const About = () => {
   return (

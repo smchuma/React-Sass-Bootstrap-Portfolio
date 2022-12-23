@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import { PageTitle, Portfolio } from "../../../Components";
+import { PageTitle, Portfolio } from "../../Elements";
 import { allData, filters } from "./data";
 
 const Works = () => {

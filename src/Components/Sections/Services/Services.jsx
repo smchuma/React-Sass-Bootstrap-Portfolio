@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { PageTitle, Service } from "../../../Components";
+import { PageTitle, Service } from "../../Elements";
 
 const servicesData = [
   {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { PageTitle } from "../../../Components";
+import { PageTitle } from "../../Elements";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [formdata, setFormdata] = useState({
@@ -28,7 +29,22 @@ function Contact() {
       setMessage("Message is required");
     } else {
       setError(false);
-      setMessage("You message has been sent!!!");
+      emailjs
+        .sendForm(
+          "service_wenwent",
+          "template_r4n7lw6",
+          formdata.current,
+          "y6eomlyE_s3p8eJs8"
+        )
+        .then(
+          (result) => {
+            setMessage(`${result.text}, I will get back to you ASAP!`);
+            event.target.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
   };
 
@@ -66,7 +82,7 @@ function Contact() {
                     <input
                       type="text"
                       className="form-control"
-                      name="name"
+                      name="user_name"
                       id="InputName"
                       placeholder="Your name"
                       onChange={handleChange}
@@ -81,7 +97,7 @@ function Contact() {
                       type="email"
                       className="form-control"
                       id="InputEmail"
-                      name="email"
+                      name="user_email"
                       placeholder="Email address"
                       onChange={handleChange}
                       value={formdata.email}
@@ -95,7 +111,7 @@ function Contact() {
                       type="text"
                       className="form-control"
                       id="InputSubject"
-                      name="subject"
+                      name="user_subject"
                       placeholder="Subject"
                       onChange={handleChange}
                       value={formdata.subject}
