@@ -1,155 +1,102 @@
-import React, { useState } from "react";
-import { PageTitle } from "../../Elements";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import { PageTitle } from "../../Elements";
+import "react-toastify/dist/ReactToastify.css";
 
-function Contact() {
-  const [formdata, setFormdata] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+const Contact = () => {
+  const form = useRef();
 
-  const [error, setError] = useState(false);
-  const [message, setMessage] = useState("");
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const submitHandler = (event) => {
-    event.preventDefault();
-    if (!formdata.name) {
-      setError(true);
-      setMessage("Name is required");
-    } else if (!formdata.email) {
-      setError(true);
-      setMessage("Email is required");
-    } else if (!formdata.subject) {
-      setError(true);
-      setMessage("Subject is required");
-    } else if (!formdata.message) {
-      setError(true);
-      setMessage("Message is required");
-    } else {
-      setError(false);
-      emailjs
-        .sendForm(
-          "service_wenwent",
-          "template_r4n7lw6",
-          formdata.current,
-          "y6eomlyE_s3p8eJs8"
-        )
-        .then(
-          (result) => {
-            setMessage(`${result.text}, I will get back to you ASAP!`);
-            event.target.reset();
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
-  };
-
-  const handleChange = (event) => {
-    setFormdata({
-      ...formdata,
-      [event.currentTarget.name]: event.currentTarget.value,
-    });
-  };
-
-  const handleAlerts = () => {
-    if (error && message) {
-      return <div className="alert alert-danger mt-4">{message}</div>;
-    } else if (!error && message) {
-      return <div className="alert alert-success mt-4">{message}</div>;
-    } else {
-      return null;
-    }
+    emailjs
+      .sendForm(
+        "service_wenwent",
+        "template_r4n7lw6",
+        form.current,
+        "y6eomlyE_s3p8eJs8"
+      )
+      .then(
+        (result) => {
+          toast(`${result.text}, I will get back to you ASAP!`);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
-    <section id="contact" className="contact">
+    <section className="contact" id="contact">
       <div className="container">
         <PageTitle title="Get in Touch" />
         <div className="form">
           <div className="col-md-9">
             <form
+              ref={form}
+              onSubmit={sendEmail}
               id="contact-form"
               className="contact-form mt-6"
-              onSubmit={submitHandler}
             >
               <div className="row">
                 <div className="column col-md-6">
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control"
                       name="user_name"
-                      id="InputName"
-                      placeholder="Your name"
-                      onChange={handleChange}
-                      value={formdata.name}
+                      placeholder="Your Name"
+                      className="form-control"
+                      required
                     />
                   </div>
                 </div>
-
                 <div className="column col-md-6">
                   <div className="form-group">
                     <input
                       type="email"
-                      className="form-control"
-                      id="InputEmail"
                       name="user_email"
-                      placeholder="Email address"
-                      onChange={handleChange}
-                      value={formdata.email}
-                    />
-                  </div>
-                </div>
-
-                <div className="column col-md-12">
-                  <div className="form-group">
-                    <input
-                      type="text"
+                      placeholder="Your Email"
                       className="form-control"
-                      id="InputSubject"
-                      name="user_subject"
-                      placeholder="Subject"
-                      onChange={handleChange}
-                      value={formdata.subject}
+                      required
                     />
                   </div>
                 </div>
-
                 <div className="column col-md-12">
                   <div className="form-group">
                     <textarea
                       name="message"
-                      id="InputMessage"
-                      className="form-control"
                       rows="5"
                       placeholder="Message"
-                      onChange={handleChange}
-                      value={formdata.message}
-                    ></textarea>
+                      className="form-control"
+                      required
+                    />
                   </div>
                 </div>
               </div>
-              <button
-                type="submit"
-                name="submit"
-                id="submit"
-                value="Submit"
-                className="btn btn-default"
-              >
+              <button type="submit" className="btn btn-default">
                 Send Message
               </button>
             </form>
-            {handleAlerts()}
           </div>
         </div>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
       <div className="spacer" data-height="96"></div>
     </section>
   );
-}
+};
 
 export default Contact;
