@@ -8,8 +8,6 @@ import {
   HeroSection,
   Projects,
   Resume,
-  Services,
-  Works,
 } from "../../Components";
 
 const Home = () => {
@@ -42,14 +40,8 @@ const Home = () => {
         <Element name="section-about">
           <About />
         </Element>
-        <Element name="section-services">
-          <Services />
-        </Element>
         <Element name="section-experiences">
           <Resume />
-        </Element>
-        <Element name="section-works">
-          <Works />
         </Element>
         <Element name="section-projects">
           <Projects />

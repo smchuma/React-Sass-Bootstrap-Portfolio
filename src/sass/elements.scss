@@ -181,6 +181,10 @@
   position: relative;
 }
 
+.timeline {
+  background-color: #393c50;
+}
+
 .timeline .timeline-container {
   padding-left: 50px;
   margin-bottom: 50px;
@@ -194,7 +198,7 @@
 
 .timeline.edu .timeline-container::after {
   content: "\e019";
-  background: #fff;
+  background-color: #393c50;
   font-family: "simple-line-icons";
   font-size: 24px;
   color: $colorpink;
@@ -206,7 +210,7 @@
 
 .timeline.exp .timeline-container::after {
   content: "\e04b";
-  background: #fff;
+  background-color: #393c50;
   font-family: "simple-line-icons";
   font-size: 24px;
   color: $colorpink;
@@ -221,13 +225,14 @@
 }
 
 .timeline .content .time {
-  color: #8b88b1;
+  color: $colorpink;
   font-size: 14px;
 }
 
 .timeline .content h3 {
   font-size: 20px;
   margin: 10px 0;
+  color: white;
 }
 
 .timeline .content p {

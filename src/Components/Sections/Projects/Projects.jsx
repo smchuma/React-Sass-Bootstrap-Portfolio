@@ -9,7 +9,7 @@ const Projects = () => {
         <PageTitle title="Projects" />
         <div className="row blog-wrapper">
           {projectData.map((item) => (
-            <div className="col-md-4" key={item.id}>
+            <div className="col-md-6" key={item.id}>
               <Project projectData={item} />
             </div>
           ))}

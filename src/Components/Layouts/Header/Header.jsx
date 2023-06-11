@@ -39,7 +39,12 @@ const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
       </header>
       <header className={handleClasses()}>
         <div className="circle">
-          <img src="./images/pic.png" alt="sam" />
+          <img
+            src={
+              "https://res.cloudinary.com/smchuma/image/upload/v1686483232/my_circle_pic_uu37zn.png"
+            }
+            alt="sam"
+          />
         </div>
 
         <Logo logoSource={logoSource} />
@@ -67,17 +72,7 @@ const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
                 <i className="fa-solid fa-user"></i>About
               </Link>
             </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-services"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="fa-regular fa-lightbulb"></i>Services
-              </Link>
-            </li>
+
             <li>
               <Link
                 activeClass="active"
@@ -89,17 +84,7 @@ const Header = ({ light, logoSource, toggleMenu, headerToggler }) => {
                 <i className="fa-solid fa-user-graduate"></i>Resume
               </Link>
             </li>
-            <li>
-              <Link
-                activeClass="active"
-                to="section-works"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <i className="fa-solid fa-briefcase"></i>Works
-              </Link>
-            </li>
+
             <li>
               <Link
                 activeClass="active"

@@ -15,7 +15,13 @@ const HeroSection = () => {
       <div className="container">
         <div className="intro">
           <div className="circle">
-            <img src="images/pic.png" alt="Samora Mchuma" className="mb-4" />
+            <img
+              src={
+                "https://res.cloudinary.com/smchuma/image/upload/v1686483232/my_circle_pic_uu37zn.png"
+              }
+              alt="Samora Mchuma"
+              className="mb-4"
+            />
           </div>
 
           <h1 className="mb-2 mt-0">Samora Laurent Mchuma</h1>
@@ -24,14 +30,12 @@ const HeroSection = () => {
             <Typed
               strings={[
                 "Frontend Developer ",
-                "Backend developer",
-                "Photography / Videographer",
-                "VFX Artist",
-                "Motion / Graphic Designer",
-                "2D Animator",
+                "React.js Engineer",
+                "Node.js Engineer",
+                "Data Engineer Enthusiast",
               ]}
               typeSpeed={100}
-              backSpeed={50}
+              backSpeed={90}
               attr="value"
               loop
             >

@@ -10,18 +10,21 @@ const About = () => {
           <div className=" text-justify text-md-right ">
             <div className="padding-30">
               <p>
-                I have a bachelor’s degree in information systems technology
-                from United States International University-Africa and have more
-                than 2 years of experience as a front-end developer. I have
-                advanced knowledge of React and Node.js, as well as the ability
-                to work independently and solve problems creatively.
+                I am a skilled Fullstack Developer proficient in JavaScript,
+                React.js, and Node.js. I specialize in writing clean, scalable
+                code and have experience in optimizing applications for maximum
+                performance. With a strong foundation in web development and a
+                knack for problem-solving, I am dedicated to delivering
+                high-quality solutions.
               </p>
               <p>
-                I've worked on several projects, including a clothing e-commerce
-                website where users can buy clothes; a cryptocurrency tracker
-                where users can keep track of their cryptocurrencies; and a
-                YouTube clone where users can watch YouTube videos. These
-                projects have helped me improve my programming skills immensely.
+                I am also a data engineering enthusiast, currently learning
+                about data engineering. I have developed a deep interest in the
+                critical role that data plays in powering modern applications
+                and driving informed decision-making. As I delve into the world
+                of data engineering, I am excited to build robust data
+                infrastructure, design efficient data pipelines, and implement
+                data integration strategies.
               </p>
               <div className="mt-3">
                 <a href="cv.pdf" download="Samora Mchuma CV.pdf">
