@@ -10,11 +10,21 @@ export const projectData = [
   },
   {
     id: 22,
-    title: "SemaSenti (Ongoing)    ",
+    title: "SemaSenti (Ongoing)",
     desc: "A web based Swahili sentiment analysis tool that empowers Tanzanian and Kenya businesses with simple, affordable, and accessible customer sentiment insights. Harnessing cutting-edge machine learning, SemaSenti accurately predicts sentiments from social media, reviews, and online sources.",
     image:
       "https://res.cloudinary.com/smchuma/image/upload/v1686487867/semasenti_qkgg06.png",
     demo: "https://semasenti.netlify.app/",
+  },
+  {
+    id: 29,
+    title: "InPred - Predictive Modelling tool (Ongoing)    ",
+    desc: "Have you ever wished you could predict what your customers will buy next? Our website tool can do just that! Using the power of data and technology, we help you forecast what your customers are likely to purchase in the future. This means you can plan ahead, stock the right products, and provide a personalized experience for your customers.",
+    image:
+      "https://res.cloudinary.com/smchuma/image/upload/v1688130988/low2_ecttzb.png",
+    demo: "https://inpred.netlify.app/",
+    github:
+      "https://github.com/smchuma/InPred-Web-App-Predictive-Modelling-Frontend",
   },
   {
     id: 23,
