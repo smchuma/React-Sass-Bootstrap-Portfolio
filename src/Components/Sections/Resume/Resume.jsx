@@ -21,15 +21,15 @@ const educationData = [
 const experienceData = [
   {
     id: 2,
-    title: "Operations Intern at KCB Bank Kenya",
-    years: "Feb 2023 - May 2023",
+    title: "Software Engineer  at KCB Bank Kenya",
+    years: "Nov 2022 - May 2023",
     content:
-      "Acquired knowledge of banking systems and software utilization, applicable to software development projects. \t Demonstrated proficiency in administrative tasks related to banking systems and software utilization. \t Enhanced troubleshooting efficiency by 30% within the operations department, leading to faster resolution of ICT-related issues.",
+      "Utilize SQL database skills to manage and optimize data storage and retrieval, ensuring efficient and reliable application performance. \t Design and implement highly scalable, testable code, enabling efficient  application development and future scalability. \t Collaborate with cross-functional teams to identify and resolve programming bugs, ensuring smooth application execution.",
   },
 
   {
     id: 3,
-    title: "IT and Software Development Assistant (Work Study Program)",
+    title: "IT and Software Development Assistant",
     years: "Sep 2018 - Sep 2022",
     content:
       "Improved student project completion rates by 20% through React.js and Node.js implementation. \t Optimized website performance and user experience with responsive design techniques. \t Collaborated with design team for visually appealing and user-friendly interfaces.",

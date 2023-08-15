@@ -2,7 +2,7 @@ import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
 function Project({ projectData }) {
-  const { title, image, github, demo, desc } = projectData;
+  const { title, image, github, demo, desc, tech } = projectData;
 
   return (
     <ScrollAnimation
@@ -20,9 +20,12 @@ function Project({ projectData }) {
           <div className="my-0 title">
             <h4>{title}</h4>
           </div>
-          <di>
+          <div>
             <p>{desc}</p>
-          </di>
+          </div>
+          <div>
+            <p style={{ fontWeight: "400", color: "black" }}>{tech}</p>
+          </div>
           <div className="buttons">
             <a href={github} target="blank">
               <button>GITHUB</button>
